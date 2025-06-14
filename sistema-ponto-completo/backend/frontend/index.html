@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Sistema de Ponto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2 class="mb-4">Sistema de Ponto</h2>
+    <form id="loginForm">
+      <input type="text" id="matricula" class="form-input" placeholder="Matrícula" required />
+      <input type="password" id="senha" class="form-input" placeholder="Senha" required />
+      <button type="submit" class="btn-personalizado">Entrar</button>
+    </form>
+    <p id="mensagemErro" class="mensagem"></p>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* ======= Base Global ======= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======= Container Central Reutilizável ======= */
+.centralizado, .login-box, .painel-box {
+  max-width: 500px;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Estilo específico para a tela de login */
+.login-box {
+  max-width: 400px;
+}
+
+/* Estilo para painéis maiores (ex: admin.html) */
+.painel-box {
+  max-width: 800px;
+  text-align: left;
+}
+
+/* ======= Títulos ======= */
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ======= Campos de Formulário ======= */
+.form-input {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: block;
+  box-sizing: border-box;
+}
+
+select.form-input {
+  appearance: none;
+}
+
+/* ======= Botões ======= */
+.btn-personalizado {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.2s;
+}
+
+.btn-personalizado:hover {
+  background-color: #0056b3;
+}
+
+/* ======= Mensagens de feedback ======= */
+.mensagem {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #dc3545; /* vermelho para erro, pode ajustar se necessário */
+  text-align: center;
+}
+
+/* ======= Tabelas (ex: admin.html) ======= */
+.tabela-custom {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabela-custom th,
+.tabela-custom td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.tabela-custom th {
+  background-color: #f0f0f0;
+}
+
+/* ======= Estilo para formulários adiciona*

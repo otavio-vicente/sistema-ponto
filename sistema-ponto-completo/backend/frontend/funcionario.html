@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Ponto</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="centralizado">
+    <h2 id="nomeUsuario">Bem-vindo, Funcionário</h2>
+    <p>Selecione o horário:</p>
+
+    <select id="horarioSelecionado" class="form-input">
+      <option value="">-- Escolha um horário --</option>
+      <optgroup label="Entrada Manhã">
+        <option value="07:45">07:45</option>
+        <option value="08:00">08:00</option>
+        <option value="08:15">08:15</option>
+      </optgroup>
+      <optgroup label="Saída Manhã">
+        <option value="11:45">11:45</option>
+        <option value="12:00">12:00</option>
+        <option value="12:15">12:15</option>
+      </optgroup>
+      <optgroup label="Entrada Tarde">
+        <option value="13:45">13:45</option>
+        <option value="14:00">14:00</option>
+        <option value="14:15">14:15</option>
+      </optgroup>
+      <optgroup label="Saída Tarde">
+        <option value="17:45">17:45</option>
+        <option value="18:00">18:00</option>
+        <option value="18:15">18:15</option>
+      </optgroup>
+    </select>
+
+    <button class="btn-personalizado" onclick="registrar('entrada_manha')">Entrada Manhã</button>
+    <button class="btn-personalizado" onclick="registrar('saida_manha')">Saída Manhã</button>
+    <button class="btn-personalizado" onclick="registrar('entrada_tarde')">Entrada Tarde</button>
+    <button class="btn-personalizado" onclick="registrar('saida_tarde')">Saída Tarde</button>
+
+    <p id="mensagemRetorno" class="mensagem"></p>
+  </div>
+  <script src="js/ponto.js"></script>
+</body>
+</html>
