@@ -49,6 +49,7 @@ exports.removerFuncionario = async (req, res) => {
     res.json({ message: 'Funcionário removido com sucesso.' });
   } catch (err) {
     console.error('Erro removerFuncionario:', err);
+    res.json({ message: 'O funcionário possui registros.' });
     res.status(500).json({ message: 'Erro ao remover funcionário.' });
   }
 };

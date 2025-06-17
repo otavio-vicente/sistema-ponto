@@ -44,6 +44,12 @@ function abrirFormulario() {
 }
 
 // CADASTRAR FUNCIONÁRIO
+
+document.getElementById('formFuncionario').addEventListener('submit', function(e) {
+  e.preventDefault(); // impede o reload da página
+  cadastrarFuncionario();
+});
+
 async function cadastrarFuncionario() {
   const matricula = document.getElementById('matricula').value;
   const nome      = document.getElementById('nome').value;
